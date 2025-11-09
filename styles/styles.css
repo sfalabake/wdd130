@@ -1,26 +1,60 @@
-nav{
+/* NAVIGATION */
+nav {
     background-color: darkblue;
     padding: 10px;
 }
 
 nav a {
-    color:white;
+    color: white;
     display: block;
     padding: 20px;
+    text-decoration: none; 
 }
 
+/* HEADINGS */
 h1 {
     color: darkblue;
 }
 
-img {
-    width: 150px;
+/* MAIN IMAGE */
+main img {
+    width: 150px; 
     height: auto;
     border: 1px solid black;
     padding: 2px;
     box-shadow: 0 0 30px gray;
+    border-radius: 50%; 
+}
+
+/* MAIN CONTENT */
+main {
+    max-width: 800px; 
+    margin: 0 auto;   
 }
 
 p {
-    padding: 10px;
+    padding: 0;
+}
+
+/* ASIDE */
+aside {
+    width: 300px;
+    margin: 20px auto;
+    border: 2px solid #333;
+    padding: 15px;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* ASIDE IMAGE */
+aside img {
+    width: 200px;
+    height: auto; 
+
+/* FOOTER */
+footer {
+    margin-top: 30px;       /* space from main content */
+    border-top: 2px solid #333; /* top border */
+    text-align: center;     /* center text */
+    padding-top: 10px;
 }

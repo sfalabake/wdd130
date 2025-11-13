@@ -1,11 +1,21 @@
+:root {
+    /* Define reusable color variables */
+    --primary-color: darkblue;
+    --secondary-color: #333;
+    --text-color: white;
+    --light-gray: #f0f0f0;
+    --shadow-color: gray;
+    --border-color: black;
+}
+
 /* NAVIGATION */
 nav {
-    background-color: darkblue;
+    background-color: var(--primary-color);
     padding: 10px;
 }
 
 nav a {
-    color: white;
+    color: var(--text-color);
     display: block;
     padding: 20px;
     text-decoration: none; 
@@ -13,16 +23,16 @@ nav a {
 
 /* HEADINGS */
 h1 {
-    color: darkblue;
+    color: var(--primary-color);
 }
 
 /* MAIN IMAGE */
 main img {
     width: 150px; 
     height: auto;
-    border: 1px solid black;
+    border: 1px solid var(--border-color);
     padding: 2px;
-    box-shadow: 0 0 30px gray;
+    box-shadow: 0 0 30px var(--shadow-color);
     border-radius: 50%; 
 }
 
@@ -40,10 +50,10 @@ p {
 aside {
     width: 300px;
     margin: 20px auto;
-    border: 2px solid #333;
+    border: 2px solid var(--secondary-color);
     padding: 15px;
-    background-color: #f0f0f0;
-    color: #333;
+    background-color: var(--light-gray);
+    color: var(--secondary-color);
 }
 
 /* ASIDE IMAGE */
@@ -56,8 +66,8 @@ aside img {
 
 /* FOOTER */
 footer {
-    margin-top: 30px;       /* space from main content */
-    border-top: 2px solid #333; /* top border */
-    text-align: center;     /* center text */
+    margin-top: 30px;
+    border-top: 2px solid var(--secondary-color);
+    text-align: center;
     padding-top: 10px;
 }

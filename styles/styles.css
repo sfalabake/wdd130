@@ -49,7 +49,10 @@ aside {
 /* ASIDE IMAGE */
 aside img {
     width: 200px;
-    height: auto; 
+    height: auto;
+    display: block;
+    margin: 0 auto 10px auto; 
+}
 
 /* FOOTER */
 footer {

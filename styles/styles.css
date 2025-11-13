@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
     /* Define reusable color variables */
     --primary-color: darkblue;
@@ -27,13 +33,13 @@ h1 {
 }
 
 /* MAIN IMAGE */
+/* Profile image floated right */
 main img {
-    width: 150px; 
+    float: right;
+    width: 100px;
     height: auto;
-    border: 1px solid var(--border-color);
-    padding: 2px;
-    box-shadow: 0 0 30px var(--shadow-color);
-    border-radius: 50%; 
+    margin: 0 0 1rem 1rem; /* space below and to the left of image */
+    border-radius: 10px; /* optional – gives a soft corner */
 }
 
 /* MAIN CONTENT */
@@ -46,28 +52,59 @@ p {
     padding: 0;
 }
 
-/* ASIDE */
-aside {
-    width: 300px;
-    margin: 20px auto;
-    border: 2px solid var(--secondary-color);
-    padding: 15px;
-    background-color: var(--light-gray);
-    color: var(--secondary-color);
-}
-
-/* ASIDE IMAGE */
-aside img {
-    width: 200px;
-    height: auto;
-    display: block;
-    margin: 0 auto 10px auto; 
-}
-
 /* FOOTER */
 footer {
     margin-top: 30px;
     border-top: 2px solid var(--secondary-color);
     text-align: center;
     padding-top: 10px;
+}
+
+/* Class Selectors */
+.box {
+  margin: 1rem;
+  border: 1px solid rgb(0 0 0 / 10%);
+  padding: 1rem;
+  background-color: #ddd;
+  color: #000;
+}
+
+/* ASIDE */
+aside {
+    position: relative; /* Create positioning context for the overlay */
+    width: 20em;
+    margin: 20px auto;
+    border: 2px solid var(--secondary-color);
+    padding: 15px;
+    background-color: var(--light-gray);
+    color: var(--secondary-color);
+    text-align: center;
+    overflow: hidden; /* Keeps overlay neatly inside */
+}
+
+/* Image styling */
+aside img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+/* Overlay heading */
+aside h2 {
+    position: absolute;
+    top: 10px; /* Positions it near the top of the image */
+    left: 50%;
+    transform: translateX(-50%); /* Centers horizontally */
+    background-color: rgba(0, 0, 139, 0.7); /* dark blue with transparency */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+/* Paragraph text wrapping nicely */
+main p {
+    text-align: justify;
+    line-height: 1.6;
 }

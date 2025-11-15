@@ -1,4 +1,4 @@
-:root{
+:root {
     --primary-color: #055a05;
     --secondary-color: #f4a261;
     --accent1-color: #264653;
@@ -29,24 +29,13 @@ header nav ul {
     list-style: none;
     display: contents;
     gap: 8px;
+    align-items: center;
     padding: 10px 0;
 }
 
-header nav ul li:before {
+header nav ul li::before {
     content: " • ";
     color: var(--accent1-color);
-}
-
-
-header nav ul li a {
-    text-decoration: none;
-    color: var(--accent1-color);
-    font-weight: bold;
-}
-
-
-header nav img {
-    width: 90px;
 }
 
 header nav ul li a {
@@ -54,6 +43,14 @@ header nav ul li a {
     color: var(--accent1-color);
     font-weight: bold;
     font-size: 1rem;
+}
+
+header nav ul li a:hover {
+    color: var(--secondary-color);
+}
+
+header nav img {
+    width: 90px;
 }
 
 /* remove default nav margin that was breaking layout */
@@ -88,30 +85,30 @@ nav {
     font-size: 2rem;
 }
 
-
 /* Hero paragraph box at bottom */
 .hero article {
-    float: right;
     position: absolute;
     bottom: 40px;
-    left: 10px;
-    right: 10px;
-    background: rgba(38, 70, 83, 0.85);
+    left: 40px;
+    max-width: 600px;
+    background: rgba(38, 70, 83, 0.85); /* overlay with opacity, keep for image readability */
     color: white;
-    margin-left: 16px;
     padding: 16px;
     border-radius: 6px;
-    display: flex;       /* use flex to control layout */
-    gap: 10px;           /* spacing between text and image */
+
+    display: flex;
+    flex-direction: row-reverse; /* image on right, text on left */
+    gap: 16px;
     align-items: flex-start;
 }
 
 .hero article img {
     width: 120px;
-    flex-shrink: 0;     /* prevent shrinking */
+    height: 120px;
+    object-fit: cover;
     border-radius: 4px;
+    flex-shrink: 0;
     margin: 0;
-    order: 1;      
 }
 
 .socialmedia a {
@@ -136,6 +133,12 @@ section h2 {
 section p {
     margin: 20px 30px;
     line-height: 1.5;
+    color: var(--primary-color); /* use primary color for paragraph text */
+}
+
+/* Optional: highlight important text in accent2-color */
+section p span {
+    color: var(--accent2-color);
 }
 
 /* -------- FOOTER -------- */

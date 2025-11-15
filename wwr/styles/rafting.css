@@ -91,7 +91,7 @@ nav {
     bottom: 40px;
     left: 40px;
     max-width: 600px;
-    background: rgba(38, 70, 83, 0.85); /* overlay with opacity, keep for image readability */
+    background: rgba(38, 70, 83, 0.85); /* dark enough for contrast */
     color: white;
     padding: 16px;
     border-radius: 6px;

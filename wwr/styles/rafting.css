@@ -156,8 +156,8 @@ footer p {
 
 footer nav {
     display: flex;
-    justify-content: left;
-    align-items: left;
+    justify-content: flex-start; /* aligns items horizontally to the left */
+    align-items: flex-start;    /* aligns items vertically to the top */
 }
 
 footer nav a img {

@@ -56,15 +56,17 @@ nav ul {
     gap: 20px;
 }
 
-/* 🟢 FINAL FIX 1: Navigation Link Contrast (Passed Audit) */
+/* ✅ FIX: Default link color set to high-contrast ACCENT color */
 nav a {
     text-decoration: none;
     color: var(--accent1-color); 
     font-weight: bold;
 }
 
+/* ✅ FINAL FIX: Hover color set to high-contrast ACCENT color (or another passing color)
+   to ensure the audit passes the contrast check on hover. */
 nav a:hover {
-    color: var(--primary-color);
+    color: var(--accent1-color); 
 }
 
 /* ==============================
@@ -178,11 +180,9 @@ footer p {
     margin-bottom: 10px;
 }
 
-/* 🟢 FINAL FIX 2: Added explicit white color to social media links (though unnecessary)
-   to potentially eliminate the last "white on white" audit warning. */
 footer nav.socialmedia a {
     text-decoration: none;
-    color: white; /* Ensures link text is white for max contrast on dark footer */
+    color: white; /* Ensure text is white for max contrast on dark footer */
     margin: 0 10px;
     display: inline-block;
 }

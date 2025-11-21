@@ -35,6 +35,9 @@ body {
 ============================== */
 header {
     background-color: var(--secondary-color);
+    /* ✅ FINAL FIX: Ensures ALL text in the header (including any non-link text) 
+       uses a color that passes contrast on the orange background. */
+    color: var(--accent1-color); 
 }
 
 .header-grid {
@@ -56,15 +59,14 @@ nav ul {
     gap: 20px;
 }
 
-/* ✅ FIX: Default link color set to high-contrast ACCENT color */
+/* ✅ Links use the high-contrast ACCENT color */
 nav a {
     text-decoration: none;
     color: var(--accent1-color); 
     font-weight: bold;
 }
 
-/* ✅ FINAL FIX: Hover color set to high-contrast ACCENT color (or another passing color)
-   to ensure the audit passes the contrast check on hover. */
+/* ✅ Hover uses the high-contrast ACCENT color to ensure pass */
 nav a:hover {
     color: var(--accent1-color); 
 }
@@ -182,7 +184,7 @@ footer p {
 
 footer nav.socialmedia a {
     text-decoration: none;
-    color: white; /* Ensure text is white for max contrast on dark footer */
+    color: white; 
     margin: 0 10px;
     display: inline-block;
 }

@@ -1,5 +1,5 @@
 /* ==============================
-   Universal Reset
+    Universal Reset
 ============================== */
 *,
 *::before,
@@ -10,7 +10,7 @@
 }
 
 /* ==============================
-   CSS Variables
+    CSS Variables
 ============================== */
 :root {
     --primary-color: #055a05;
@@ -21,7 +21,7 @@
 }
 
 /* ==============================
-   Body
+    Body
 ============================== */
 body {
     font-family: var(--body-font);
@@ -31,7 +31,7 @@ body {
 }
 
 /* ==============================
-   Header
+    Header
 ============================== */
 header {
     background-color: var(--secondary-color);
@@ -56,18 +56,20 @@ nav ul {
     gap: 20px;
 }
 
+/* ✅ CORRECTION: Changed link color to a darker, high-contrast color (--accent1-color)
+   to pass WCAG AA contrast ratio on the --secondary-color background. */
 nav a {
     text-decoration: none;
-    color: var(--primary-color);
+    color: var(--accent1-color); 
     font-weight: bold;
 }
 
 nav a:hover {
-    color: var(--accent1-color);
+    color: var(--primary-color);
 }
 
 /* ==============================
-   Hero Section
+    Hero Section
 ============================== */
 .hero {
     position: relative;
@@ -109,7 +111,7 @@ nav a:hover {
 }
 
 /* ==============================
-   History Section
+    History Section
 ============================== */
 .history {
     padding: 40px 20px;
@@ -130,7 +132,7 @@ nav a:hover {
 }
 
 /* ==============================
-   Adventure Section
+    Adventure Section
 ============================== */
 .adventure {
     padding: 40px 20px;
@@ -164,7 +166,7 @@ nav a:hover {
 }
 
 /* ==============================
-   Footer
+    Footer
 ============================== */
 footer {
     text-align: center;
@@ -190,7 +192,7 @@ footer nav.socialmedia img {
 }
 
 /* ==============================
-   Responsive Design
+    Responsive Design
 ============================== */
 @media (max-width: 768px) {
     .header-grid {

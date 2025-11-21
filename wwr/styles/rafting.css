@@ -56,8 +56,9 @@ nav ul {
     gap: 20px;
 }
 
-/* ✅ CORRECTION: Changed link color to a darker, high-contrast color (--accent1-color)
-   to pass WCAG AA contrast ratio on the --secondary-color background. */
+/* 🟢 CORRECTION FOR COLOR CONTRAST (WCAG AA) 
+   Changing the text color from low-contrast --primary-color (Dark Green) 
+   to high-contrast --accent1-color (Dark Teal) on the orange background. */
 nav a {
     text-decoration: none;
     color: var(--accent1-color); 

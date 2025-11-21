@@ -16,20 +16,41 @@
 
 /* NAVIGATION */
 nav {
-    background-color: var(--primary-color);
-    padding: 10px;
+    background-color: steelblue;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 nav a {
-    color: var(--text-color);
     display: block;
-    padding: 20px;
-    text-decoration: none; 
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
 }
 
 /* HEADINGS */
 h1 {
     color: var(--primary-color);
+    border-bottom: 3px solid var(--primary-color); /* bottom border */
+    padding-bottom: 0.5rem;
+}
+
+/* Header, Grid wrapper, and Footer max-width centering */
+header, .grid, footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+/* Grid layout */
+.grid {
+    display: grid;
+    grid-template-columns: 20rem 1fr; /* aside fixed width, main flexible */
+    gap: 1rem; /* space between aside and main */
+    align-items: start; /* align items at top */
 }
 
 /* MAIN IMAGE */
@@ -44,8 +65,8 @@ main img {
 
 /* MAIN CONTENT */
 main {
-    max-width: 800px; 
-    margin: 0 auto;   
+    grid-column: 2/3; /* place in second column of grid */
+    margin: 1rem;
 }
 
 p {
@@ -71,9 +92,11 @@ footer {
 
 /* ASIDE */
 aside {
+    width: 20rem;
     position: relative; /* Create positioning context for the overlay */
-    width: 20em;
-    margin: 20px auto;
+    grid-column: 1/2;   /* first column of grid */
+    grid-row: 1/2;      /* first row of grid */
+    margin: 0;           /* optional, controlled by grid gap */
     border: 2px solid var(--secondary-color);
     padding: 15px;
     background-color: var(--light-gray);
@@ -82,7 +105,7 @@ aside {
     overflow: hidden; /* Keeps overlay neatly inside */
 }
 
-/* Image styling */
+/* Image styling inside aside */
 aside img {
     width: 100%;
     height: auto;

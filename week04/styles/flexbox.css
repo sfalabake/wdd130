@@ -1,7 +1,7 @@
 body {
     font-family: Helvetica, Arial, sans-serif;
     margin: 1rem;
-}
+} 
 
 .flex-container {
     border: 3px dashed darkcyan;
@@ -10,14 +10,14 @@ body {
     flex-wrap: wrap;
 }
 
-.flex-item {
+ .flex-item {
     width: 250px;
     margin: 1rem;
     border: 1px solid rgb(0 0 0 / 20%);
     padding: 0.5rem;
     background-color: #bbb;
     color: #333;
-}
+} 
 
 .item1 {
     min-height: 100px;

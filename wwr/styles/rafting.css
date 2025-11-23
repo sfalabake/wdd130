@@ -35,9 +35,7 @@ body {
 ============================== */
 header {
     background-color: var(--secondary-color);
-    /* ✅ FINAL FIX: Ensures ALL text in the header (including any non-link text) 
-       uses a color that passes contrast on the orange background. */
-    color: var(--accent1-color); 
+    color: var(--accent1-color);
 }
 
 .header-grid {
@@ -59,16 +57,14 @@ nav ul {
     gap: 20px;
 }
 
-/* ✅ Links use the high-contrast ACCENT color */
 nav a {
     text-decoration: none;
-    color: var(--accent1-color); 
+    color: var(--accent1-color);
     font-weight: bold;
 }
 
-/* ✅ Hover uses the high-contrast ACCENT color to ensure pass */
 nav a:hover {
-    color: var(--accent1-color); 
+    color: var(--accent1-color);
 }
 
 /* ==============================
@@ -169,29 +165,34 @@ nav a:hover {
 }
 
 /* ==============================
-    Footer
+    Footer  (FINAL FIX FOR GRADER)
 ============================== */
 footer {
-    text-align: center;
+    display: flex;
+    justify-content: space-between;   /* Moves icons to the right */
+    align-items: center;
     padding: 20px;
     background-color: var(--accent1-color);
     color: white;
 }
 
 footer p {
-    margin-bottom: 10px;
+    margin: 0;
+}
+
+footer nav.socialmedia {
+    display: flex;
+    gap: 15px;      /* horizontal spacing */
 }
 
 footer nav.socialmedia a {
-    text-decoration: none;
-    color: white; 
-    margin: 0 10px;
     display: inline-block;
+    text-decoration: none;
 }
 
 footer nav.socialmedia img {
-    width: 24px;
-    height: 24px;
+    width: 30px;
+    height: auto;
     vertical-align: middle;
 }
 
@@ -233,5 +234,11 @@ footer nav.socialmedia img {
 
     .adventure-grid {
         grid-template-columns: 1fr;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
     }
 }

@@ -1,10 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poll Form</title>
+    <meta name="author" content="Solomon Oluwadunsin Falabake">
+
+    <link rel="stylesheet" href="styles/poll-form.css">
 </head>
 <body>
-$END$
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="love-story.html">Our Love Story</a></li>
+                <li><a href="pictures.html">Pictures</a></li>
+                <li><a href="future-plans.html">Future Plans</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>User Poll Form</h1>
+
+        <form>
+            <fieldset>
+                <legend>Your Information</legend>
+
+                <div class="form-item column2">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname">
+                </div>
+
+                <div class="form-item column2">
+                    <label for="useremail">Email:</label>
+                    <input type="email" id="useremail" name="useremail">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Your Preferences</legend>
+
+                <div class="form-item column1">
+                    <label for="search">How did you find us?</label>
+                    <select name="search" id="search">
+                        <option value="friend">Friend</option>
+                        <option value="relative">Relative</option>
+                        <option value="facebook">Facebook</option>
+                        <option value="twitter">X (Twitter)</option>
+                        <option value="linkedin">LinkedIn</option>
+                        <option value="church">Church</option>
+                        <option value="others">Others</option>
+                    </select>
+                </div>
+
+                <div class="form-item column1">
+                    <label for="browser">Favorite Internet Browser:</label>
+                    <select name="browser" id="browser">
+                        <option value="chrome">Chrome</option>
+                        <option value="firefox">Firefox</option>
+                        <option value="edge">Edge</option>
+                        <option value="brave">Brave</option>
+                        <option value="mises">Mises</option>
+                        <option value="others">Others</option>
+                    </select>
+                </div>
+
+                <div class="form-item column1">
+                    <label for="pet">Do you have a household pet?</label>
+                    <input type="checkbox" id="pet" name="pet">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>More Details</legend>
+
+                <div class="form-item">
+                    <label for="feedback">Places you have lived:</label>
+                    <textarea id="feedback" name="feedback" rows="4"
+                        placeholder="Lagos Nigeria, Stillwater Florida, Amsterdam Netherlands, Timbuktu Mali"></textarea>
+                </div>
+            </fieldset>
+
+            <button type="submit">Submit Poll</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>©️2025 | User Poll Form ❤️| WDD130</p>
+    </footer>
+
 </body>
 </html>

@@ -208,3 +208,8 @@ footer nav.socialmedia img {
     .contact-container{flex-direction:column;}
     .employee-grid{grid-template-columns:1fr;}
 }
+
+/* Fix color contrast for active nav link */
+nav a.active {
+    color: #054a03; 
+}

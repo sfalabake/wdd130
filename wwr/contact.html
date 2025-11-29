@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact Us | Whitewater Rafting Company</title>
-<link rel="stylesheet" href="styles/contact.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Whitewater Rafting Company</title>
+    <meta name="description" content="Contact Whitewater Rafting Company for inquiries, reservations, and customer support. Find our address, phone number, email, and contact form.">
+    <meta name="author" content="Solomon Oluwadunsin Falabake">
+
+    <link rel="stylesheet" href="styles/rafting.css">
 </head>
 <body>
 
@@ -57,15 +60,27 @@
 
                     <fieldset>
                         <legend>Purpose of Message</legend>
-                        <label><input type="radio" name="purpose" value="general" required> General Inquiry</label>
-                        <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
-                        <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
+                        <label for="purpose-general">
+                            <input type="radio" id="purpose-general" name="purpose" value="general" required>
+                            General Inquiry
+                        </label>
+                        <label for="purpose-reservation">
+                            <input type="radio" id="purpose-reservation" name="purpose" value="reservation">
+                            Reservation Question
+                        </label>
+                        <label for="purpose-suggestion">
+                            <input type="radio" id="purpose-suggestion" name="purpose" value="suggestion">
+                            Website Suggestion
+                        </label>
                     </fieldset>
 
                     <label for="message">Your Message</label>
                     <textarea id="message" name="message" rows="6" required></textarea>
 
-                    <label><input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter</label>
+                    <label for="subscribe">
+                        <input type="checkbox" id="subscribe" name="subscribe">
+                        Please subscribe me to the monthly newsletter
+                    </label>
 
                     <button type="submit">Send Message</button>
                 </form>

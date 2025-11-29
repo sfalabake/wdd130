@@ -36,16 +36,63 @@
             <p><strong>Address:</strong> 13, Kekereowo Street, Ilasamaja, Mushin, Lagos State</p>
             <p><strong>Phone:</strong> +234 (90) 555-3029</p>
             <p><strong>Email:</strong> sfalabake@byupathway.edu</p>
+        </section>
 
-            <h3>Find Us Here</h3>
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2894.70264545198!2d-116.1995830845122!3d43.61501727912247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54ae566f123456%3A0xabcdef1234567890!2sBoise%20River!5e0!3m2!1sen!2sus!4v1701451000000"
-                width="100%"
-                height="300"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
+        <!-- Contact Section: Map + Form -->
+        <section class="contact-section">
+            <div class="contact-container">
+                <!-- Google Map -->
+                <div class="map">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2894.70264545198!2d-116.1995830845122!3d43.61501727912247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54ae566f123456%3A0xabcdef1234567890!2sBoise%20River!5e0!3m2!1sen!2sus!4v1701451000000"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="form">
+                    <h2>Send Us a Message</h2>
+
+                    <form action="#" method="post">
+                        <label for="fullname">Full Name</label>
+                        <input type="text" id="fullname" name="fullname" required>
+
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <fieldset>
+                            <legend>Purpose of Message</legend>
+
+                            <label>
+                                <input type="radio" name="purpose" value="general" required>
+                                General Inquiry
+                            </label>
+
+                            <label>
+                                <input type="radio" name="purpose" value="reservation">
+                                Reservation Question
+                            </label>
+
+                            <label>
+                                <input type="radio" name="purpose" value="suggestion">
+                                Website Suggestion
+                            </label>
+                        </fieldset>
+
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+
+                        <label>
+                            <input type="checkbox" name="subscribe">
+                            Please subscribe me to the monthly newsletter
+                        </label>
+
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
         </section>
 
         <!-- Employee Section -->
@@ -70,54 +117,6 @@
             </div>
         </section>
 
-        <!-- Contact Form Section -->
-        <section class="contact-form">
-            <h2>Send Us a Message</h2>
-
-            <form action="#" method="post">
-                <!-- Name -->
-                <label for="fullname">Full Name</label>
-                <input type="text" id="fullname" name="fullname" required>
-
-                <!-- Email -->
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" required>
-
-                <!-- Purpose -->
-                <fieldset>
-                    <legend>Purpose of Message</legend>
-
-                    <label>
-                        <input type="radio" name="purpose" value="general" required>
-                        General Inquiry
-                    </label>
-
-                    <label>
-                        <input type="radio" name="purpose" value="reservation">
-                        Reservation Question
-                    </label>
-
-                    <label>
-                        <input type="radio" name="purpose" value="suggestion">
-                        Website Suggestion
-                    </label>
-                </fieldset>
-
-                <!-- Message -->
-                <label for="message">Your Message</label>
-                <textarea id="message" name="message" rows="6" required></textarea>
-
-                <!-- Newsletter Checkbox -->
-                <label>
-                    <input type="checkbox" name="subscribe">
-                    Please subscribe me to the monthly newsletter
-                </label>
-
-                <!-- Submit Button -->
-                <button type="submit">Send Message</button>
-            </form>
-        </section>
-
     </main>
 
     <!-- Footer -->
@@ -138,3 +137,4 @@
 
 </body>
 </html>
+9

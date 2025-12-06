@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us | Whitewater Rafting Company</title>
     <meta name="description" content="Learn about Whitewater Rafting Company: our history, adventures, and trips for all skill levels.">
-    <meta name="author" content="Solomon Oluwadunsin Falabake">
-
-    <link rel="stylesheet" href="styles/rafting_old.css">
+    <link rel="stylesheet" href="styles/rafting.css">
 </head>
 <body>
+<div class="page-container">
+
     <!-- Header -->
     <header>
         <div class="header-grid">
@@ -17,7 +17,7 @@
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="about.html" class="active">About Us</a></li>
                     <li><a href="trips.html">Trips</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
                 </ul>
@@ -25,76 +25,69 @@
         </div>
     </header>
 
-    <main>
-        <!-- Hero Section -->
-        <div class="hero">
-            <img src="images/rafting.jpg" alt="People rafting down rapids" class="hero-img">
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="images/rafting.jpg" alt="People rafting" class="hero-img">
+        <div class="hero-overlay">
             <h1>About Whitewater Rafting Company</h1>
-            <article>
-                <img src="images/hero.jpg" alt="Experienced rafting guide on the river">
-                <h2>About Whitewater Rafting</h2>
-                <p>
-                    Whitewater rafting is a type of recreation that involves navigating a non-motorized watercraft down free flowing rivers. A rafting company organizes trips, provides the watercraft, life jackets, etc., and typically offers experienced guides to take passengers down a river. The business intent is to provide a thrilling and safe experience to individuals and groups for a fee.
-                </p>
-            </article>
         </div>
+    </section>
 
-        <!-- History Section -->
-        <section class="history">
-            <h2>History</h2>
-            <div class="history-grid">
-                <p>
-                    The history of commercial whitewater rafting dates back to the mid-20th century. In the 1950s and 1960s, outdoor enthusiasts began organizing guided rafting trips on rivers in the western United States. The sport gained popularity in the 1970s and 1980s, leading to the establishment of numerous rafting companies.
-                </p>
-                <img src="images/hero.jpg" alt="Historical rafting scene">
-                <p>
-                    Today, whitewater rafting is a popular recreational activity worldwide, with companies operating on rivers across North America, Europe, Asia, and other regions.
-                </p>
+    <main>
+        <!-- About Content -->
+        <article class="home-grid">
+            <div>
+                <h2>Our Story</h2>
+                <p>Whitewater rafting is an exhilarating adventure activity. We offer guided trips with all safety gear included. Experience nature and fun on the rapids safely and confidently.</p>
             </div>
+            <div>
+                <h2>Our Mission</h2>
+                <p>To deliver thrilling rafting experiences while ensuring maximum safety and enjoyment for adventurers of all ages and skill levels.</p>
+            </div>
+        </article>
+
+        <!-- History -->
+        <section>
+            <h2 style="text-align:center;">History</h2>
+            <p style="text-align:center; max-width:700px; margin:0 auto;">
+                Commercial whitewater rafting grew in popularity in the mid-20th century. Today, our company operates trips across scenic rivers ensuring fun, safety, and adventure.
+            </p>
         </section>
 
         <!-- Adventure Section -->
-        <section class="adventure">
-            <h2>Adventure Awaits You!</h2>
-            <div class="adventure-grid">
-                <figure>
-                    <img src="images/los-dientes-del-diablo.jpg" alt="Rafting at Los Dientes del Diablo">
-                    <figcaption>Los Dientes del Diablo</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/big-mallard.jpg" alt="Rafting at Big Mallard Rapids">
-                    <figcaption>Big Mallard</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/half-day-adventure.jpg" alt="Half Day Rafting Adventure">
-                    <figcaption>Half Day Adventure</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/rapid-rush.jpg" alt="Rapid Rush Whitewater Experience">
-                    <figcaption>Rapid Rush</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/canyon-drop.jpg" alt="Canyon Drop Rapids">
-                    <figcaption>Canyon Drop</figcaption>
-                </figure>
-            </div>
+        <section class="adventure-grid">
+            <figure>
+                <img src="images/los-dientes-del-diablo.jpg" alt="Los Dientes del Diablo">
+                <figcaption>Los Dientes del Diablo</figcaption>
+            </figure>
+            <figure>
+                <img src="images/big-mallard.jpg" alt="Big Mallard Rapids">
+                <figcaption>Big Mallard</figcaption>
+            </figure>
+            <figure>
+                <img src="images/half-day-adventure.jpg" alt="Half Day Adventure">
+                <figcaption>Half Day Adventure</figcaption>
+            </figure>
+            <figure>
+                <img src="images/rapid-rush.jpg" alt="Rapid Rush">
+                <figcaption>Rapid Rush</figcaption>
+            </figure>
+            <figure>
+                <img src="images/canyon-drop.jpg" alt="Canyon Drop">
+                <figcaption>Canyon Drop</figcaption>
+            </figure>
         </section>
     </main>
 
-    <!-- Footer -->
     <footer>
-        <p>©️2025 Whitewater Rafting | Solomon Oluwadunsin Falabake</p>
+        <p>&copy; 2025 Whitewater Rafting | Solomon Oluwadunsin Falabake</p>
         <nav class="socialmedia">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-                <img src="images/facebook.svg" alt="Facebook Icon">
-            </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-                <img src="images/x-bw.svg" alt="Twitter Icon">
-            </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-                <img src="images/instagram-square.svg" alt="Instagram Icon">
-            </a>
+            <a href="https://facebook.com"><img src="images/facebook.svg" alt="Facebook Icon"></a>
+            <a href="https://twitter.com"><img src="images/x-bw.svg" alt="Twitter Icon"></a>
+            <a href="https://instagram.com"><img src="images/instagram-square.svg" alt="Instagram Icon"></a>
         </nav>
     </footer>
+
+</div>
 </body>
 </html>

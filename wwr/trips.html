@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trips | Whitewater Rafting Company</title>
-    <meta name="description" content="Explore our thrilling rafting trips suitable for all skill levels.">
+    <meta name="description" content="Explore our thrilling whitewater rafting trips. Detailed trip info, photos, and a summary table to help you plan your adventure.">
+    <meta name="author" content="Solomon Oluwadunsin Falabake">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 <body>
@@ -25,72 +26,71 @@
         </div>
     </header>
 
-    <!-- Main Content -->
     <main>
+        <h1 style="text-align:center;">Our Trips</h1>
+
+        <!-- Trip Cards -->
+        <section class="trip-cards">
+            <h2 class="visually-hidden">Trip Options</h2>
+            <div class="trip-card">
+                <img src="images/trip1.jpg" alt="Adventure Rapids">
+                <h3>Adventure Rapids</h3>
+                <p>A thrilling half-day experience for beginners and intermediates.</p>
+            </div>
+            <div class="trip-card">
+                <img src="images/trip2.jpg" alt="Full-Day Rapids">
+                <h3>Full-Day Rapids</h3>
+                <p>Intense full-day adventure with scenic river views and rapids.</p>
+            </div>
+            <div class="trip-card">
+                <img src="images/trip3.jpg" alt="Family Fun">
+                <h3>Family Fun</h3>
+                <p>Safe and exciting trips designed for families with children.</p>
+            </div>
+        </section>
+
+        <!-- Trip Table -->
         <section>
-            <h1 style="text-align:center;">Our Trips</h1>
+            <h2 class="visually-hidden">Trip Summary Table</h2>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Trip Name</th>
+                            <th>Difficulty</th>
+                            <th>Duration</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Adventure Rapids</td>
+                            <td>Easy</td>
+                            <td>2 hours</td>
+                            <td>₦15,000</td>
+                        </tr>
+                        <tr>
+                            <td>Full-Day Rapids</td>
+                            <td>Medium</td>
+                            <td>5 hours</td>
+                            <td>₦30,000</td>
+                        </tr>
+                        <tr>
+                            <td>Family Fun</td>
+                            <td>Easy</td>
+                            <td>3 hours</td>
+                            <td>₦20,000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
 
-            <!-- Trip Cards -->
-            <section class="trip-cards">
-                <article class="trip-card">
-                    <img src="images/trip1.jpg" alt="Adventure Rapids">
-                    <h3>Adventure Rapids</h3>
-                    <p>A thrilling half-day experience for beginners and intermediates.</p>
-                </article>
-                <article class="trip-card">
-                    <img src="images/trip2.jpg" alt="Full-Day Rapids">
-                    <h3>Full-Day Rapids</h3>
-                    <p>Intense full-day adventure with scenic river views and rapids.</p>
-                </article>
-                <article class="trip-card">
-                    <img src="images/trip3.jpg" alt="Family Fun">
-                    <h3>Family Fun</h3>
-                    <p>Safe and exciting trips designed for families with children.</p>
-                </article>
-            </section>
-
-            <!-- Trip Summary Table -->
-            <section>
-                <h2 style="text-align:center;">Trip Summary</h2>
-                <div class="table-wrap">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Trip Name</th>
-                                <th>Difficulty</th>
-                                <th>Duration</th>
-                                <th>Price</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Adventure Rapids</td>
-                                <td>Easy</td>
-                                <td>Half-Day</td>
-                                <td>₦15,000</td>
-                            </tr>
-                            <tr>
-                                <td>Full-Day Rapids</td>
-                                <td>Medium</td>
-                                <td>Full Day</td>
-                                <td>₦25,000</td>
-                            </tr>
-                            <tr>
-                                <td>Family Fun</td>
-                                <td>Easy</td>
-                                <td>2-3 hours</td>
-                                <td>₦20,000</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </section>
-
-            <!-- CTA Bar -->
-            <section class="cta-bar">
-                <p>Ready for an adventure?</p>
-                <a href="contact.html" class="btn btn-cta">Contact Us</a>
-            </section>
+        <!-- CTA Bar -->
+        <section class="cta-bar">
+            <h2 class="visually-hidden">Call to Action</h2>
+            <p>Ready for an adventure?</p>
+            <a href="contact.html" class="btn btn-cta">Contact Us</a>
         </section>
     </main>
 

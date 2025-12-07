@@ -289,3 +289,57 @@ footer nav.socialmedia img { width:30px; }
     .hero-overlay { padding:12px; }
     .cta-bar { flex-direction: column; text-align:center; }
 }
+
+/* ==================== Contact Form Box ==================== */
+.contact-container .form {
+    background: #fff;
+    padding: 20px 25px;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+
+/* Optional: make fieldsets more visible */
+.contact-container fieldset {
+    border: 1px solid #cfcfcf;
+    border-radius: 6px;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+}
+
+/* ==================== Trip Table Styling ==================== */
+.table-wrap {
+    overflow-x: auto;
+    margin: 20px 0;
+}
+
+.table-wrap table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.table-wrap th,
+.table-wrap td {
+    padding: 12px 15px;
+    text-align: center;
+}
+
+.table-wrap thead {
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
+    font-weight: bold;
+}
+
+.table-wrap tbody tr {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.table-wrap tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.table-wrap tbody tr:hover {
+    background-color: #eef8ee;
+}
